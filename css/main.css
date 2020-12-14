@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Netflix;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Netflix;
+  src: url(/fonts/AvenirNextLTPro-Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Netflix;
+  src: url(/fonts/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+.header {
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 80%,
+    transparent 100%
+  );
+  display: grid;
+  color: #fff;
+  padding: 1em 1em 0.5em;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 460px;
+  z-index: 2;
+}
+
+.header__logo {
+  grid-column: span 2;
+}
+
+.header__nav-container {
+  grid-column: span 2;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+}
+
+.header__nav li {
+  list-style: none;
+  margin: 0 0.5em;
+}
+
+.featured {
+  position: relative;
+  top: -30px;
+}
+
+.featured__video {
+  max-width: 450px;
+  margin: 0 5px;
+}
