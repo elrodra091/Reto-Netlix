@@ -5,6 +5,7 @@
 ### Colores
 
 <!-- Negro -->
+
 - Primary: #000000
 <!-- Rojo -->
 - Secondary: #D22F26
@@ -23,10 +24,13 @@ No se encuentra dentro de Google Fonts pero la encontrar los archivos de la fuen
 
 ```css
 @font-face {
-  font-family: 'Arial';
-  src: url('/Arial.ttf');
+  font-family: "Arial";
+  src: url("/Arial.ttf");
 }
 ```
+
 # Reto de @LeonidasEsteban
 
 En base a los archivos que ha proporcionado Leonidas se generará un proyecto de la pagina de Netflix, esto se desarrollará con tecnologias Web Vanilla.
+
+version número 2 de GitHub
