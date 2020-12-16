@@ -90,3 +90,53 @@ body {
 .featured__tags-item:nth-child(1) {
   list-style: none;
 }
+
+.featured__buttons-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-primary {
+  align-items: center;
+  display: flex;
+  padding: 0 1em;
+}
+
+.button-primary::before {
+  background: url(../images/icons/play.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5em;
+}
+
+.button-secondary {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 0.75em;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button-secondary::before {
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+.plus::before {
+  background: url(../images/icons/plus.svg);
+}
+
+.info::before {
+  background: url(../images/icons/info.svg);
+}
