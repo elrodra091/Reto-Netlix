@@ -71,3 +71,22 @@ body {
   max-width: 450px;
   margin: 0 5px;
 }
+
+.featured__tags-container {
+  position: relative;
+  top: -1.95em;
+}
+
+.featured__tags {
+  display: flex;
+  justify-content: center;
+}
+
+.featured__tags-item {
+  font-size: 0.65em;
+  margin-left: 1.8em;
+}
+
+.featured__tags-item:nth-child(1) {
+  list-style: none;
+}
