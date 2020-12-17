@@ -19,6 +19,7 @@
         color: white;
         padding: 0.5rem 0;
         text-align: center;
+        padding: 2em 0;
       }
       .credits a {
         color: #f865b0;
@@ -27,7 +28,7 @@
     </style>
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <img
         src="./images/logo-netflix.png"
         alt="Netflix's Logo"
@@ -43,7 +44,7 @@
       </nav>
     </header>
 
-    <section class="featured">
+    <section class="featured container">
       <video
         class="featured__video"
         id="video"
@@ -66,7 +67,7 @@
       </div>
     </section>
 
-    <section class="movies">
+    <section class="movies container">
       <article class="movies__container">
         <h2>Populares en Netflix</h2>
         <div class="movies__slider">
@@ -178,7 +179,7 @@
       </article>
     </section>
 
-    <section class="actions">
+    <section class="actions container">
       <button class="button-secondary home">Inicio</button>
       <button class="button-secondary soon">Próximamente</button>
       <button class="button-secondary search">Buscar</button>
@@ -194,8 +195,15 @@
     <script>
       const video = document.getElementById("video");
       const button = document.getElementById("play");
+
+      // video.controls = true;
+
       button.addEventListener("click", (event) => {
-        video.play();
+        if (video.paused == true) {
+          video.play();
+          return;
+        }
+        video.pause();
       });
     </script>
   </body>
