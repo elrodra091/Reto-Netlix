@@ -44,7 +44,12 @@
     </header>
 
     <section class="featured">
-      <video class="featured__video" loop src="./images/matrix.mp4"></video>
+      <video
+        class="featured__video"
+        id="video"
+        loop
+        src="./images/matrix.mp4"
+      ></video>
       <div class="featured__tags-container">
         <ul class="featured__tags">
           <li class="featured__tags-item">Surrealista</li>
@@ -56,13 +61,13 @@
       </div>
       <div class="featured__buttons-container">
         <button class="button-secondary plus">Mi lista</button>
-        <button class="button-primary">Reproducir</button>
+        <button id="play" class="button-primary">Reproducir</button>
         <button class="button-secondary info">Info</button>
       </div>
     </section>
 
     <section class="movies">
-      <article>
+      <article class="movies__container">
         <h2>Populares en Netflix</h2>
         <div class="movies__slider">
           <img
@@ -98,7 +103,7 @@
         </div>
       </article>
 
-      <article>
+      <article class="movies__container">
         <h2>Series japonesas anime</h2>
         <div class="movies__slider">
           <img
@@ -136,7 +141,7 @@
         </div>
       </article>
 
-      <article>
+      <article class="movies__container">
         <h2>Series de EE.UU. sobre crimenes</h2>
         <div class="movies__slider">
           <img
@@ -186,5 +191,12 @@
         leonidasesteban.com
       </a>
     </div>
+    <script>
+      const video = document.getElementById("video");
+      const button = document.getElementById("play");
+      button.addEventListener("click", (event) => {
+        video.play();
+      });
+    </script>
   </body>
 </html>

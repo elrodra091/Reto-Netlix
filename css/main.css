@@ -145,6 +145,10 @@ body {
   padding: 0 0.8em;
 }
 
+.movies__container {
+  margin-top: 1em;
+}
+
 .movies__slider {
   display: flex;
   overflow-x: scroll;
@@ -160,4 +164,19 @@ body {
   display: flex;
   margin: 0.5em 0;
   justify-content: space-around;
+}
+
+.home::before {
+  background: url(../images/icons/home.svg);
+}
+
+.soon::before {
+  background: url(../images/icons/cinema.svg);
+}
+.search::before {
+  background: url(../images/icons/search.svg);
+}
+
+.download::before {
+  background: url(../images/icons/download.svg);
 }
