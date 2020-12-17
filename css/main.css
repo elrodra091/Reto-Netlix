@@ -140,3 +140,24 @@ body {
 .info::before {
   background: url(../images/icons/info.svg);
 }
+
+.movies {
+  padding: 0 0.8em;
+}
+
+.movies__slider {
+  display: flex;
+  overflow-x: scroll;
+  margin-top: 0.5em;
+  max-width: 460px;
+}
+
+.movies__slider img {
+  margin-right: 0.5em;
+}
+
+.actions {
+  display: flex;
+  margin: 0.5em 0;
+  justify-content: space-around;
+}
