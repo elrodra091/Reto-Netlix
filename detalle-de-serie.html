@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,7 @@
     />
     <title>Leonidas Esteban | Recreando Netflix</title>
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/details.css" />
     <style>
       .credits {
         font-family: system-ui;
@@ -27,27 +28,29 @@
     </style>
   </head>
   <body>
-    <header class="header" style="background-image: none">
+    <header class="header container">
       <img src="/images/icons/back.svg" alt="" />
     </header>
     <main class="movie container">
       <video src="/images/matrix.mp4" class="video"></video>
-      <h3>Matrix: Recargado</h3>
-      <div class="featured__tags-container">
-        <ul class="featured__tags">
-          <li class="featured__tags-item">99% de coincidencia</li>
-          <li class="featured__tags-item">2003</li>
-          <li class="featured__tags-item">2h 18m</li>
-        </ul>
-      </div>
 
-      <div class="featured__buttons-container">
-        <button id="play" class="button-primary">Reproducir</button>
-        <button class="button-secondary">Descargar</button>
-      </div>
+      <section class="movie__details">
+        <h3 class="">Matrix: Recargado</h3>
 
-      <div class="movie__details">
-        <p>
+        <div class="featured__tags-container">
+          <ul class="featured__tags">
+            <li class="featured__tags-item">99% de coincidencia</li>
+            <li class="featured__tags-item">2003</li>
+            <li class="featured__tags-item">2h 18m</li>
+          </ul>
+        </div>
+
+        <div class="featured__buttons-container movie-buttons">
+          <button id="play" class="button-primary play">Reproducir</button>
+          <button class="button-secondary download">Descargar</button>
+        </div>
+
+        <p class="movie__details-text">
           Neo, Morpheus, Trinity y el resto de la tripulación continúan en la
           lucha contra las máquinas que han esclavizado a la raza humana. Ahora
           más humanos han sido despertados e intentan vivir en el mundo real. A
@@ -56,20 +59,22 @@
           poco tiempo, muy poco tiempo...
         </p>
 
-        <p>
+        <p class="movie__details-text">
           Elenco: Keanu Reeves, Laurence Fishburne, Carrie-Anne Mose, Monica
           Bellucci
         </p>
 
-        <p>Dirigido por: Lilly Wachowski, Lana Wachowski</p>
-      </div>
+        <p class="movie__details-text">
+          Dirigido por: Lilly Wachowski, Lana Wachowski
+        </p>
+      </section>
     </main>
 
-    <div class="featured__buttons-container">
+    <section class="featured__buttons-container">
       <button class="button-secondary my-list">Mi lista</button>
       <button class="button-secondary">Calificar</button>
       <button class="button-secondary">Compartir</button>
-    </div>
+    </section>
 
     <section class="movies container">
       <article class="movies__container">

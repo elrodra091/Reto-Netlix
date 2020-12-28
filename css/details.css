@@ -1,0 +1,60 @@
+.header {
+  background-image: none;
+}
+
+.featured__tags-container {
+  position: relative;
+  top: 0;
+}
+
+.featured__tags {
+  list-style: none;
+  justify-content: space-between;
+  font-size: 1.35em;
+  margin: 0.65em 0;
+}
+
+.featured__tags-item:nth-child(1) {
+  margin: 0;
+  color: #6ac16c;
+  font-weight: bold;
+}
+
+.movie__details {
+  padding: 0 0.5em;
+  margin-top: 0.5em;
+}
+
+.featured__buttons-container {
+  margin-bottom: 0.75em;
+}
+.movie-buttons.featured__buttons-container {
+  flex-direction: column;
+}
+
+.play {
+  justify-content: center;
+  height: 45px;
+  margin-bottom: 0.8em;
+}
+
+.movie .download {
+  background: #2b2b2b;
+  flex-direction: initial;
+  justify-content: center;
+  font-weight: bold;
+  height: 45px;
+}
+
+.movie .download:active {
+  border-style: inset;
+}
+
+.download:hover::after {
+  display: none;
+}
+
+.movie__details-text {
+  margin-bottom: 1em;
+  text-align: justify;
+}
