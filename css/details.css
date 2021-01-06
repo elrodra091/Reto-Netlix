@@ -14,10 +14,29 @@
   margin: 0.65em 0;
 }
 
+.featured__tags-item {
+  margin: 0;
+}
+
 .featured__tags-item:nth-child(1) {
   margin: 0;
   color: #6ac16c;
   font-weight: bold;
+}
+
+.year::after {
+  background: #686868;
+  content: "R";
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.time::after {
+  content: "HD";
+  border: 1px solid #686868;
+  margin-left: 5px;
+  padding: 3px 5px;
 }
 
 .movie__details {
@@ -57,4 +76,46 @@
 .movie__details-text {
   margin-bottom: 1em;
   text-align: justify;
+}
+
+.cast,
+.director {
+  font-size: 0.8em;
+  color: #686868;
+}
+
+.my-list::before {
+  background: url(../images/icons/plus.svg);
+}
+
+.qualify::before {
+  background: url(../images/icons/like.svg);
+}
+
+.share::before {
+  background: url(../images/icons/email-send.svg);
+}
+
+.movies::before {
+  content: "";
+  background: #d22f26;
+  position: absolute;
+  height: 5px;
+  top: -15px;
+  width: 140px;
+}
+
+.movies {
+  position: relative;
+}
+
+@media screen and (min-width: 900px) {
+  .video-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header img {
+    width: 45px;
+  }
 }

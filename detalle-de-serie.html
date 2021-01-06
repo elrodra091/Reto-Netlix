@@ -29,19 +29,23 @@
   </head>
   <body>
     <header class="header container">
-      <img src="/images/icons/back.svg" alt="" />
+      <a href="./index.html">
+        <img src="/images/icons/back.svg" alt="" />
+      </a>
     </header>
     <main class="movie container">
-      <video src="/images/matrix.mp4" class="video"></video>
+      <picture class="video-container">
+        <video src="/images/matrix.mp4" class="video" id="matrix_video"></video>
+      </picture>
 
       <section class="movie__details">
         <h3 class="">Matrix: Recargado</h3>
 
         <div class="featured__tags-container">
           <ul class="featured__tags">
-            <li class="featured__tags-item">99% de coincidencia</li>
-            <li class="featured__tags-item">2003</li>
-            <li class="featured__tags-item">2h 18m</li>
+            <li class="featured__tags-item coincidence">99% de coincidencia</li>
+            <li class="featured__tags-item year">2003</li>
+            <li class="featured__tags-item time">2h 18m</li>
           </ul>
         </div>
 
@@ -59,21 +63,21 @@
           poco tiempo, muy poco tiempo...
         </p>
 
-        <p class="movie__details-text">
+        <p class="movie__details-text cast">
           Elenco: Keanu Reeves, Laurence Fishburne, Carrie-Anne Mose, Monica
           Bellucci
         </p>
 
-        <p class="movie__details-text">
+        <p class="movie__details-text director">
           Dirigido por: Lilly Wachowski, Lana Wachowski
         </p>
       </section>
     </main>
 
-    <section class="featured__buttons-container">
+    <section class="featured__buttons-container container">
       <button class="button-secondary my-list">Mi lista</button>
-      <button class="button-secondary">Calificar</button>
-      <button class="button-secondary">Compartir</button>
+      <button class="button-secondary qualify">Calificar</button>
+      <button class="button-secondary share">Compartir</button>
     </section>
 
     <section class="movies container">
@@ -127,5 +131,18 @@
         leonidasesteban.com
       </a>
     </div>
+
+    <script>
+      const $matrix_video = document.getElementById("matrix_video");
+      const $play_btn = document.getElementById("play");
+
+      $play_btn.addEventListener("click", function () {
+        if ($matrix_video.paused) {
+          $matrix_video.play();
+        } else {
+          $matrix_video.pause();
+        }
+      });
+    </script>
   </body>
 </html>
